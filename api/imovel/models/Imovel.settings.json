@@ -1,0 +1,58 @@
+{
+  "connection": "default",
+  "collectionName": "imovels",
+  "info": {
+    "name": "imovel",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "descricao": {
+      "maxLength": 50,
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "quarto": {
+      "type": "integer"
+    },
+    "banheiro": {
+      "type": "integer"
+    },
+    "cozinha": {
+      "type": "integer"
+    },
+    "sala": {
+      "type": "integer"
+    },
+    "metragem": {
+      "type": "decimal"
+    },
+    "valor": {
+      "type": "decimal"
+    },
+    "tipo": {
+      "enum": [
+        "aluguel",
+        "venda"
+      ],
+      "type": "enumeration"
+    },
+    "observacoes": {
+      "type": "text"
+    },
+    "imagens": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "cidade": {
+      "model": "cidade"
+    }
+  }
+}

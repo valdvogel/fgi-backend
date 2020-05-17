@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "cidades",
+  "info": {
+    "name": "cidade",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "descricao": {
+      "maxLength": 50,
+      "type": "string"
+    }
+  }
+}

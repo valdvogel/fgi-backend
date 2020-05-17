@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/imovels",
+      "handler": "Imovel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/imovels/count",
+      "handler": "Imovel.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/imovels/:id",
+      "handler": "Imovel.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/imovels",
+      "handler": "Imovel.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/imovels/:id",
+      "handler": "Imovel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/imovels/:id",
+      "handler": "Imovel.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
